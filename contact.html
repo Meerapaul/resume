@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            background-color: #211b35;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #cb4281;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            color: #211b35; 
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #211b35;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #cb4281;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 500px;
+            margin-top: 20px;
+        }
+
+        .button, .prev {
+            background-color: #cb4281;
+            width: 120px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .button a, .prev a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+        }
+
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .contact-info p {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .contact-info p {
+                font-size: 14px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+                margin: 20px 10px;
+            }
+
+            .button, .prev {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACT INFORMATION</h1>
+    <div class="container">
+        <h2>GET IN TOUCH</h2>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+919846XXXXXX">9846*******</a></p>
+            <p><strong>Email:</strong> <a href="mailto:meerapaul004@gmail.com">meerapaul004@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/meera-paul-a-b-1220a6274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/Meera Paul A B</a></p>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="prev"><a href="experience.html">PREV</a></div>
+        <div class="button"><a href="home.html">HOME</a></div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
