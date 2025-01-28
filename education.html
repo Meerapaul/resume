@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-color: #211b35;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .head {
+            font-size: 50px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .para {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .para img {
+            margin-top: 20px;
+        }
+
+        .para p {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 20px;
+        }
+
+        .button, .prev {
+            background-color: #cb4281;
+            width: 120px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px 15px;
+        }
+
+        .button a, .prev a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+        }
+
+        /* Media Queries for Smaller Screens */
+        @media (max-width: 768px) {
+            .head {
+                font-size: 40px;
+            }
+
+            .para img {
+                width: 150px;
+                height: auto;
+            }
+
+            .para p {
+                font-size: 18px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .head {
+                font-size: 30px;
+            }
+
+            .para img {
+                width: 120px;
+                height: auto;
+            }
+
+            .para p {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+                margin: 20px 10px;
+            }
+
+            .button, .prev {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="para">
+        <div class="head">EDUCATION</div>
+        <img src="https://img.icons8.com/?size=100&id=9437&format=png&color=FFFFFF" width="200" height="170" alt="Class 10 Image"/>
+        <p style="color: #cb4281; font-size: 30px;">CLASS 10</p>
+        <p>ST SHANTAL SENIOR SECONDARY SCHOOL</p>
+
+        <p style="color: #cb4281; font-size: 30px;">CLASS 12</p>
+        <p>NIRMALA BHAVAN HIGHER SECONDARY SCHOOL</p>
+
+        <img src="https://img.icons8.com/?size=100&id=79387&format=png&color=FFFFFF" width="200" height="170" alt="B.Tech Image"/>
+        <p style="color: #cb4281; font-size: 30px;">B-TECH - INFORMATION TECHNOLOGY</p>
+        <p>LBS INSTITUTE OF TECHNOLOGY FOR WOMEN</p>
+    </div>
+
+    <div class="buttons">
+        <div class="prev"><a href="home.html">PREV</a></div>
+        <div class="button"><a href="skills.html">NEXT</a></div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
