@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #211b35;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .top-panel {
+            background-color: #cb4281;
+            width: 100%;
+            height: 150px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .option {
+            text-align: right;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .option a {
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin-left: 15px;
+        }
+
+        p {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 50px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 25%; }
+        }
+
+        .typing {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .15em solid white;
+            animation: typing 3.5s steps(30, end), slideInFromLeft 1s ease-out;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+        }
+
+        .name {
+            font-weight: bold;
+            color: white;
+            font-size: 50px;
+            margin: 200px 30% 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .about {
+            font-size: 20px;
+            margin: 20px 60px 0 30%;
+            text-align: justify;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            background-color: #cb4281;
+            margin-left: 31%;
+            width: 120px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px 15px;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .typing, .top-panel, .option {
+                font-size: 0.8em;
+            }
+
+            .name {
+                font-size: 1.5em;
+                margin: 150px 10%;
+            }
+
+            .about {
+                font-size: 0.9em;
+                margin: 20px 10%;
+            }
+
+            .button {
+                margin-left: 10%;
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .typing, .top-panel, .option {
+                font-size: 0.6em;
+            }
+            .typing,.option
+            {
+                margin: 70px 5%;
+            }
+            .name {
+                font-size: 1em;
+                margin: 30px 5%;
+            }
+
+            .about {
+                font-size: 0.6em;
+                
+                margin-top: 13%;
+                
+            }
+
+            .button {
+                margin-left: 7%;
+                width: 70px;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-panel">
+        <p class="typing">Welcome!</p>
+        <div class="option">
+            <a href="home.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <p class="name">Hi,<br>I'm Meera Paul A B</p>
+    <p class="about">I am a second-year B.Tech student specializing in Information Technology at LBS Institute of Technology for Women. Passionate about coding and problem-solving, I'm building a solid foundation in computer science with a focus on software development.
+
+        As a dedicated and enthusiastic learner, I am constantly exploring new technologies and enhancing my programming skills. I enjoy working on projects that challenge me to think critically and innovate, aiming to contribute effectively to the tech community.</p>
+    <br><br>
+    <div class="button">
+        <a href="education.html">Let's Start</a>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
